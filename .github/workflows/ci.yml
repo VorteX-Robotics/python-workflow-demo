@@ -14,16 +14,16 @@ Jobs:
         python-version: ["3.7", "3.8", "3.9", "3.10", "3.11", "pypy-3.7", "pypy-3.8", "pypy-3.9"]
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Set Up Python ${{ matirx.python-version }}
-        uses: actions/setup-pyton@v4
-        with:
-          python-version: ${{ matirx.python-version }}
+    - uses: actions/checkout@v3
+    - name: Set Up Python ${{ matirx.python-version }}
+      uses: actions/setup-pyton@v4
+      with:
+        python-version: ${{ matirx.python-version }}
       
-      -name: Install Dependencies
-       run: |
+    -name: Install Dependencies
+      run: |
         python -m pip install --upgrade pip
         pip install .
 
-      -name: Run Tests
-       run: python test\test_addition_package.py
+    -name: Run Tests
+      run: python test\test_addition_package.py
