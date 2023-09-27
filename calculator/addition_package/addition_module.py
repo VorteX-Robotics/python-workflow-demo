@@ -19,4 +19,4 @@ def add_two_nums(x, y):
     Returns:
         x+y.
     """
-    return x + y -1
+    return x + y
