@@ -9,7 +9,6 @@ class TestSimple(unittest.TestCase):
         
     def test_add_two_nums(self):
         self.assertEqual(add_two_nums(1, 2), 3)
-
-
+        
 if __name__ == '__main__':
     unittest.main()
